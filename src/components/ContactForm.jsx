@@ -1,7 +1,6 @@
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
 import Section from "./Section.jsx";
-
 import useAlert from "../hooks/useAlert.js";
 import Alert from "./Alert.jsx";
 import { terminalDark, arrowUp } from "../assets/index.js";

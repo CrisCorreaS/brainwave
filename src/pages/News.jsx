@@ -1,16 +1,15 @@
 import ButtonGradient from "../assets/svg/ButtonGradient";
-import ContactForm from "../components/ContactForm";
+import Services from "../components/Services";
 
-const Contact = () => {
+const News = () => {
   return (
     <>
       <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
-        <ContactForm title="Contact Form" />
       </div>
-
+      <Services />
       <ButtonGradient />
     </>
   );
 };
 
-export default Contact;
+export default News;

@@ -1,11 +1,11 @@
 import ButtonGradient from "../assets/svg/ButtonGradient";
-import ContactForm from "../components/ContactForm";
+import Collaboration from "../components/Collaboration";
 
-const Contact = () => {
+const Events = () => {
   return (
     <>
       <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
-        <ContactForm title="Contact Form" />
+        <Collaboration />
       </div>
 
       <ButtonGradient />
@@ -13,4 +13,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Events;

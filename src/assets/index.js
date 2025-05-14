@@ -16,6 +16,13 @@ import logo3 from './logo3.svg';
 import logo4 from './logo4.svg';
 import logo5 from './logo5.svg';
 
+import star from "./star.png";
+import client1 from "./client1.png";
+import client2 from "./client2.png";
+import client3 from "./client3.png";
+import client4 from "./client4.png";
+import client5 from "./client5.png";
+import client6 from "./client6.png";
 import homeSmile from "./home-smile.svg";
 import file02 from "./file-02.svg";
 import searchMd from "./search-md.svg";
@@ -86,6 +93,7 @@ import instagram from "./socials/instagram.svg";
 import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 
+
 export {
   deepglow,
   check,
@@ -103,6 +111,13 @@ export {
   logo3,
   logo4,
   logo5,
+  star,
+  client1,
+  client2,
+  client3,
+  client4,
+  client5,
+  client6,
   homeSmile,
   file02,
   searchMd,

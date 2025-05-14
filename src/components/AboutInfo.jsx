@@ -3,6 +3,7 @@ import { smallSphere, stars } from "../assets";
 import Heading from "./Heading";
 import InfoList from "./InfoList";
 import { LeftLine, RightLine } from "./design/Pricing";
+import { Gradient } from "./design/Roadmap";
 
 const AboutInfo = () => {
   return (
@@ -26,6 +27,8 @@ const AboutInfo = () => {
             />
           </div>
         </div>
+        <Gradient />
+
 
         <Heading
           tag="Fundamentals That Guide Us"

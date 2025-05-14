@@ -38,6 +38,12 @@ import {
   logo3,
   logo4,
   logo5,
+  client1,
+  client2,
+  client3,
+  client4,
+  client5,
+  client6,
 } from "../assets";
 
 export const navigation = [
@@ -327,6 +333,121 @@ export const benefits = [
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
+  },
+];
+
+export const testimonials = [
+  {
+    name: "Esther Howard",
+    mentions: "@estherhoward",
+    review:
+      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+    imgPath: client1,
+  },
+  {
+    name: "Wade Warren",
+    mentions: "@wadewarren",
+    review:
+      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+    imgPath: client3,
+  },
+  {
+    name: "Guy Hawkins",
+    mentions: "@guyhawkins",
+    review:
+      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+    imgPath: client2,
+  },
+  {
+    name: "Marvin McKinney",
+    mentions: "@marvinmckinney",
+    review:
+      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
+    imgPath: client5,
+  },
+  {
+    name: "Floyd Miles",
+    mentions: "@floydmiles",
+    review:
+      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
+    imgPath: client4,
+  },
+  {
+    name: "Albert Flores",
+    mentions: "@albertflores",
+    review:
+      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
+    imgPath: client6,
+  },
+];
+
+export const hackathonImageList = [
+  {
+    image:
+      "https://i.pinimg.com/736x/b6/a6/f0/b6a6f0a026658fb980c59e222d227b3c.jpg",
+  },
+  {
+    image:
+      "https://i.pinimg.com/736x/1a/38/55/1a385583cf67a1db4740c66388f1120c.jpg",
+  },
+  {
+    image:
+      "https://i.pinimg.com/736x/07/24/08/0724084c00c27f93d3b705282edf2179.jpg",
+  },
+  {
+    image:
+      "https://i.pinimg.com/736x/1e/39/f7/1e39f7d230b0ea5b7a88c455c0da7b7a.jpg",
+  },
+  {
+    image:
+      "https://i.pinimg.com/736x/bc/71/26/bc7126353be75818bdd56b08c17ffe30.jpg",
+  },
+  {
+    image:
+      "https://i.pinimg.com/736x/76/06/93/7606938a9fa0951f5d79760c04875762.jpg",
+  },
+  {
+    image:
+      "https://i.pinimg.com/736x/79/56/dc/7956dccbb5aadfaf13927b3152304b32.jpg",
+  },
+  {
+    image:
+      "https://i.pinimg.com/736x/4f/e0/78/4fe07880dcff0a5c81cc65a42bf8648e.jpg",
+  },
+];
+
+export const ethicsImageList = [
+  {
+    image:
+      "https://i.pinimg.com/736x/85/e3/82/85e382fad6ef73d846531d839d13c1c1.jpg",
+  },
+  {
+    image:
+      "https://i.pinimg.com/736x/3e/55/9e/3e559ed1b0d99894cd8ee29735d3a977.jpg",
+  },
+  {
+    image:
+      "https://i.pinimg.com/736x/30/9e/ce/309ece5502468318ad588490fcb4cb80.jpg",
+  },
+  {
+    image:
+      "https://i.pinimg.com/736x/55/91/43/559143baa5b999af02854f44273c399b.jpg",
+  },
+  {
+    image:
+      "https://i.pinimg.com/736x/a0/fd/56/a0fd5659d258d753356346cb11807917.jpg",
+  },
+  {
+    image:
+      "https://i.pinimg.com/736x/f0/5b/a6/f05ba64a9e6b5dde41e5da8114c31537.jpg",
+  },
+  {
+    image:
+      "https://i.pinimg.com/736x/e7/bb/0d/e7bb0d42b88868be8eabbb07f5e9c8fb.jpg",
+  },
+  {
+    image:
+      "https://i.pinimg.com/736x/f8/c5/b8/f8c5b8333d2ee8a3c994511984230838.jpg",
   },
 ];
 
