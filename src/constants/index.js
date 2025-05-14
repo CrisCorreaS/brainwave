@@ -39,36 +39,34 @@ import {
 export const navigation = [
   {
     id: "0",
-    title: "Features",
-    url: "#features",
+    title: "Home",
+    url: "/",
   },
   {
     id: "1",
-    title: "Pricing",
-    url: "#pricing",
+    title: "About Us",
+    url: "/about",
   },
   {
     id: "2",
-    title: "How to use",
-    url: "#how-to-use",
+    title: "Events",
+    url: "/events",
   },
   {
     id: "3",
-    title: "Roadmap",
-    url: "#roadmap",
+    title: "News",
+    url: "/news",
   },
   {
     id: "4",
-    title: "New account",
-    url: "#signup",
-    onlyMobile: true,
+    title: "Gallery",
+    url: "/gallery",
   },
   {
     id: "5",
-    title: "Sign in",
-    url: "#login",
-    onlyMobile: true,
-  },
+    title: "Contact",
+    url: "/contact",
+  }
 ];
 
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
@@ -241,19 +239,53 @@ export const pricing = [
   },
 ];
 
+export const fundamentals = [
+  {
+    id: "0",
+    title: "Clarity",
+    description: "We believe true innovation begins with understanding.",
+    features: [
+      "We communicate openly and design with purpose.",
+      "Design choices always put real people first.",
+      "We simplify complex ideas without losing depth.",
+    ],
+  },
+  {
+    id: "1",
+    title: "Ingenuity",
+    description: "Creativity drives everything we do.",
+    features: [
+      "We solve problems with bold, curious thinking.",
+      "Every solution is adaptive and built for change.",
+      "We test fast, learn fast and improve constantly.",
+    ],
+  },
+  {
+    id: "2",
+    title: "Trust",
+    description: "Relationships are the foundation of impact.",
+    features: [
+      "We deliver consistently and communicate honestly.",
+      "We innovate responsibly, with ethics in mind.",
+      "We build lasting solutions, not just quick wins.",
+    ],
+  },
+];
+
+
 export const benefits = [
   {
     id: "0",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Who We Are",
+    text: "DeepGlow is a forward-thinking startup crafting bespoke solutions for businesses and individuals. We blend technology, design, and strategy to solve real-world challenges with a human touch.",
     backgroundUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "1",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Our Mission",
+    text: "We exist to unlock potential! Turning ideas into impactful tools that accelerate growth, spark creativity, and simplify complexity for those we serve.",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
@@ -261,16 +293,16 @@ export const benefits = [
   },
   {
     id: "2",
-    title: "Connect everywhere",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+    title: "Our Vision",
+    text: "We envision a world where intelligent systems and intuitive design enhance every aspect of life and work: accessible, scalable and beautifully effective.",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
   },
   {
     id: "3",
-    title: "Fast responding",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "How We Work",
+    text: "We thrive on collaboration, rapid prototyping and continuous learning. Our team of engineers, designers and dreamers bring fresh energy to every project, big or small.",
     backgroundUrl: "./src/assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
@@ -278,16 +310,16 @@ export const benefits = [
   },
   {
     id: "4",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Who We Help",
+    text: "Whether you're launching your first product or transforming legacy systems, DeepGlow delivers adaptive, high-impact solutions that evolve with your needs.",
     backgroundUrl: "./src/assets/benefits/card-5.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "5",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "The DeepGlow Difference",
+    text: "We don’t just build tech, we build trust. DeepGlow bridges the gap between innovation and empathy, ensuring every solution feels as good as it functions.",
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
