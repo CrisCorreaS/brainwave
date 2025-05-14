@@ -12,7 +12,7 @@ const Testimonials = () => {
           title="Customer feedback highlights"
         />
 
-        <div className="lg:columns-3 md:columns-2 columns-1 mt-16">
+        <div className="lg:columns-3 md:columns-2 columns-1 mt-16 mr-10 ml-10">
           {testimonials.map((testimonial, index) => (
             <GlowCard card={testimonial} key={index} index={index}>
               <div className="flex items-center gap-3">
