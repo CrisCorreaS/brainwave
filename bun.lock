@@ -4,6 +4,7 @@
     "": {
       "name": "deepglow",
       "dependencies": {
+        "@emailjs/browser": "^4.4.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-just-parallax": "^3.1.16",
@@ -79,6 +80,8 @@
     "@babel/traverse": ["@babel/traverse@7.23.9", "", { "dependencies": { "@babel/code-frame": "^7.23.5", "@babel/generator": "^7.23.6", "@babel/helper-environment-visitor": "^7.22.20", "@babel/helper-function-name": "^7.23.0", "@babel/helper-hoist-variables": "^7.22.5", "@babel/helper-split-export-declaration": "^7.22.6", "@babel/parser": "^7.23.9", "@babel/types": "^7.23.9", "debug": "^4.3.1", "globals": "^11.1.0" } }, "sha512-I/4UJ9vs90OkBtY6iiiTORVMyIhJ4kAVmsKo9KFc8UOxMeUfi2hvtIBsET5u9GizXE6/GFSuKCTNfgCswuEjRg=="],
 
     "@babel/types": ["@babel/types@7.23.9", "", { "dependencies": { "@babel/helper-string-parser": "^7.23.4", "@babel/helper-validator-identifier": "^7.22.20", "to-fast-properties": "^2.0.0" } }, "sha512-dQjSq/7HaSjRM43FFGnv5keM2HsxpmyV1PfaSVm0nzzjwwTmjOe6J4bC8e3+pTEIgHaHj+1ZlLThRJ2auc/w1Q=="],
+
+    "@emailjs/browser": ["@emailjs/browser@4.4.1", "", {}, "sha512-DGSlP9sPvyFba3to2A50kDtZ+pXVp/0rhmqs2LmbMS3I5J8FSOgLwzY2Xb4qfKlOVHh29EAutLYwe5yuEZmEFg=="],
 
     "@esbuild/aix-ppc64": ["@esbuild/aix-ppc64@0.19.12", "", { "os": "aix", "cpu": "ppc64" }, "sha512-bmoCYyWdEL3wDQIVbcyzRyeKLgk2WtWLTWz1ZIAZF/EGbNOwSA6ew3PftJ1PqMiOOGu0OyFMzG53L0zqIpPeNA=="],
 

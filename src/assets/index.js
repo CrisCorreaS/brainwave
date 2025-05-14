@@ -25,6 +25,10 @@ import curve from "./hero/curve.png";
 import robot from "./hero/robot.jpg";
 import heroBackground from "./hero/hero-background.jpg";
 
+import terminal from "./terminal.png";
+import terminalDark from "./terminal-dark.png";
+import arrowUp from "./arrow-up.png";
+
 import curve1 from "./collaboration/curve-1.svg";
 import curve2 from "./collaboration/curve-2.svg";
 import discord from "./collaboration/discord.png";
@@ -101,6 +105,9 @@ export {
   curve,
   robot,
   heroBackground,
+  terminal,
+  terminalDark,
+  arrowUp,
   curve1,
   curve2,
   discord,
