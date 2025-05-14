@@ -35,7 +35,7 @@ const GlowCard = ({ card, index, children }) => {
         </div>
   
         <div className="mb-5">
-          <p className="body-2 text-n-4">{card.review}</p>
+          <p className="body-2 text-n-4 text-white">{card.review}</p>
         </div>
   
         {children}

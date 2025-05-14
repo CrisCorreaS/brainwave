@@ -4,13 +4,15 @@ import Heading from "../components/Heading";
 import ImgGallery from "../components/ImgGallery";
 import { Gradient } from "../components/design/Roadmap";
 import { hackathonImageList, ethicsImageList } from "../constants";
-
+import { GradientLight } from "../components/design/Benefits";
 
 const Contact = () => {
   return (
     <>
       <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
         <Section>
+          <GradientLight />
+
           <Heading
             className="md:max-w-md lg:max-w-2xl"
             title="Our Event Gallery"
@@ -22,10 +24,7 @@ const Contact = () => {
           />
         </Section>
         <Section>
-          <Heading
-            tag="Past Events"
-            title="Events 2025"
-          />
+          <Heading tag="Past Events" title="Events 2025" />
           <Gradient />
 
           <ImgGallery

@@ -341,42 +341,42 @@ export const testimonials = [
     name: "Esther Howard",
     mentions: "@estherhoward",
     review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+      "I can’t speak highly enough of DeepGlow. They took our complex AI requirements and delivered a seamless, intelligent solution. Their problem-solving skills are second to none.",
     imgPath: client1,
   },
   {
     name: "Wade Warren",
     mentions: "@wadewarren",
     review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+      "Working with DeepGlow was brilliant. They transformed our outdated systems into a cutting-edge, AI-driven platform. Their attention to detail and commitment to quality are unmatched. Highly recommended for any AI project.",
     imgPath: client3,
   },
   {
     name: "Guy Hawkins",
     mentions: "@guyhawkins",
     review:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with DeepGlow was an absolute pleasure. Their professionalism, efficiency and dedication to excellence were evident throughout. Their passion for AI innovation truly stands out. If you want to future-proof your business, DeepGlow is the partner you need. Their technology is tailored, not templated.",
     imgPath: client2,
   },
   {
     name: "Marvin McKinney",
     mentions: "@marvinmckinney",
     review:
-      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
+      "DeepGlow was fantastic to work with. They modernised our operations with intuitive AI tools that are both powerful and easy to use. Exceptional work all around.",
     imgPath: client5,
   },
   {
     name: "Floyd Miles",
     mentions: "@floydmiles",
     review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
+      "DeepGlow’s expertise in AI is seriously impressive. They built us a scalable, intelligent system that’s boosted efficiency by 40%. Proper professionals!",
     imgPath: client4,
   },
   {
     name: "Albert Flores",
     mentions: "@albertflores",
     review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
+      "DeepGlow nailed our project. They grasped our needs perfectly and delivered an AI solution that surpassed expectations. Their technical skills are top-tier.",
     imgPath: client6,
   },
 ];
