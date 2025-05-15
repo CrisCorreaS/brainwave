@@ -2,14 +2,14 @@ import { useEffect, useState } from "react";
 import supabase from "../helper/supabaseClient";
 import { useNavigate, Link } from "react-router-dom";
 import { trashIcon } from "../assets";
-
+import * as XLSX from "xlsx";
 function Dashboard() {
   const navigate = useNavigate();
   const [messages, setMessages] = useState([]);
   const [testimonials, setTestimonials] = useState([]);
   const [isDeleting, setIsDeleting] = useState(false);
   const [currentUserId, setCurrentUserId] = useState(null);
-  const [activeTab, setActiveTab] = useState("contactForm"); // 'contactForm' or 'testimonials'
+  const [activeTab, setActiveTab] = useState("contactForm"); 
 
   useEffect(() => {
     const fetchUserAndData = async () => {
@@ -25,7 +25,6 @@ function Dashboard() {
 
       setCurrentUserId(user?.id);
 
-      // Fetch both messages and testimonials
       const [{ data: messagesData, error: msgError }, 
              { data: testimonialsData, error: testError }] = await Promise.all([
         supabase
@@ -96,6 +95,26 @@ function Dashboard() {
     }
   };
 
+  const exportToExcel = () => {
+    const dataForExcel = messages.map(msg => ({
+      "Name": msg.name,
+      "Email": msg.email,
+      "Phone": msg.phone || "-",
+      "Company": msg.company || "-",
+      "Country": msg.country || "-",
+      "Job Title": msg.job_title || "-",
+      "Message": msg.message,
+      "Date": new Date(msg.created_at).toLocaleString()
+    }));
+
+    const ws = XLSX.utils.json_to_sheet(dataForExcel);
+    
+    const wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, "Contact Messages");
+    
+    XLSX.writeFile(wb, "contact_messages.xlsx");
+  }
+
   return (
     <main className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -163,6 +182,17 @@ function Dashboard() {
                   ? `${messages.length} ${messages.length === 1 ? "message" : "messages"} received`
                   : `${testimonials.length} ${testimonials.length === 1 ? "testimonial" : "testimonials"}`}
               </span>
+              {activeTab === "contactForm" && messages.length > 0 && (
+                  <button
+                    onClick={exportToExcel}
+                    className="px-4 py-1 bg-green-600 hover:bg-green-700 text-white text-sm font-medium rounded-full transition-colors duration-200 flex items-center gap-1"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    Export to Excel
+                  </button>
+                )}
             </div>
           </div>
 
