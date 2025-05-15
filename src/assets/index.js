@@ -8,14 +8,14 @@ import smallSphere from "./4-small.png";
 import grid from "./grid.png";
 import check2 from "./check-02.svg";
 import loading1 from "./loading-01.svg";
-import trashIcon from "./trashIcon.svg"
+import trashIcon from "./trashIcon.svg";
 
 import yourlogo from "./yourlogo.svg";
-import logo1 from './logo1.svg';
-import logo2 from './logo2.svg';
-import logo3 from './logo3.svg';
-import logo4 from './logo4.svg';
-import logo5 from './logo5.svg';
+import logo1 from "./logo1.svg";
+import logo2 from "./logo2.svg";
+import logo3 from "./logo3.svg";
+import logo4 from "./logo4.svg";
+import logo5 from "./logo5.svg";
 
 import star from "./star.png";
 import client1 from "./client1.png";
@@ -94,6 +94,17 @@ import instagram from "./socials/instagram.svg";
 import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 
+import news1 from "./news/news1.svg";
+import news2 from "./news/news2.svg";
+import news3 from "./news/news3.svg";
+import news4 from "./news/news4.svg";
+
+import events1 from "./events/events1.svg";
+import events2 from "./events/events2.svg";
+import events3 from "./events/events3.svg";
+import events4 from "./events/events4.svg";
+import pastevents1 from "./events/past-events1.svg";
+import pastevents2 from "./events/past-events2.svg";
 
 export {
   deepglow,
@@ -180,4 +191,14 @@ export {
   instagram,
   telegram,
   twitter,
+  news1,
+  news2,
+  news3,
+  news4,
+  events1,
+  events2,
+  events3,
+  events4,
+  pastevents1,
+  pastevents2,
 };

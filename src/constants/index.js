@@ -44,6 +44,16 @@ import {
   client4,
   client5,
   client6,
+  news1,
+  news2,
+  news3,
+  news4,
+  events1,
+  events2,
+  events3,
+  events4,
+  pastevents1,
+  pastevents2,
 } from "../assets";
 
 export const navigation = [
@@ -76,7 +86,7 @@ export const navigation = [
     id: "5",
     title: "Contact",
     url: "/contact",
-  }
+  },
 ];
 
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
@@ -245,7 +255,6 @@ export const fundamentals = [
     ],
   },
 ];
-
 
 export const benefits = [
   {
@@ -420,30 +429,91 @@ export const socials = [
     id: "0",
     title: "Discord",
     iconUrl: discordBlack,
-    url: "#",
+    url: "https://discord.com/",
   },
   {
     id: "1",
     title: "Twitter",
     iconUrl: twitter,
-    url: "#",
+    url: "https://x.com/",
   },
   {
     id: "2",
     title: "Instagram",
     iconUrl: instagram,
-    url: "#",
+    url: "https://www.instagram.com/",
   },
   {
     id: "3",
     title: "Telegram",
     iconUrl: telegram,
-    url: "#",
+    url: "https://telegram.org/",
   },
   {
     id: "4",
     title: "Facebook",
     iconUrl: facebook,
-    url: "#",
+    url: "https://www.facebook.com/",
+  },
+];
+
+export const news = [
+  {
+    id: "1",
+    title: "The Advantages of Implementing AI in Your Business",
+    subtitle:
+      "How artificial intelligence is reshaping efficiency and innovation.",
+    date: "May 10, 2025",
+    imageUrl: news1,
+    content: `
+Artificial intelligence is no longer a futuristic concept, it’s a practical tool being used by businesses across every industry.  From automating routine tasks to providing data-driven insights, AI helps reduce operational costs while increasing productivity.
+
+Companies that integrate AI into their workflows often experience faster decision-making, enhanced customer experiences and improved resource allocation. Moreover, with machine learning models constantly evolving, AI can adapt to changing market trends, offering a competitive advantage to forward-thinking organisations.
+
+Whether you're a small business or a large enterprise, embracing AI isn't just beneficial, it’s essential for sustainable growth.
+    `,
+  },
+  {
+    id: "2",
+    title: "AI and the Law: Navigating Emerging Regulations",
+    subtitle: "What businesses need to know about AI compliance.",
+    date: "May 7, 2025",
+    imageUrl: news2,
+    content: `
+As artificial intelligence continues to expand, governments and regulatory bodies are stepping in to ensure ethical and responsible use.
+
+New legislation such as the EU AI Act is setting the precedent for how AI systems should be designed, implemented and governed. This includes requirements around transparency, data privacy and bias mitigation: all crucial for maintaining public trust.
+
+Businesses must stay informed and proactively adapt their systems to remain compliant. Failing to do so could result in hefty fines or reputational damage. Working with legal experts and data ethics professionals can ensure that your AI initiatives are both innovative and lawful.
+    `,
+  },
+  {
+    id: "3",
+    title: "AI as the Future of Cybersecurity",
+    subtitle:
+      "Why artificial intelligence is becoming essential in digital defence.",
+    date: "May 3, 2025",
+    imageUrl: news3,
+    content: `
+Cyber threats are evolving at a pace that traditional security methods can no longer keep up with. That’s where AI steps in.
+
+By using real-time data analysis and anomaly detection, AI-powered systems can identify potential breaches before they escalate. These systems continuously learn from new threats, making them more adaptive and responsive than conventional tools.
+
+Incorporating AI into your cybersecurity strategy means not only detecting threats faster, but also reducing response times and automating preventive measures. In today’s digital landscape, AI is not a luxury — it’s a necessity for robust, proactive security.
+    `,
+  },
+  {
+    id: "4",
+    title: "What’s New in AI and Robotics for 2025",
+    subtitle: "A look at the latest trends driving innovation.",
+    date: "April 28, 2025",
+    imageUrl: news4,
+    content: `
+The intersection of artificial intelligence and robotics continues to push the boundaries of what's possible.
+
+From autonomous delivery robots to AI-driven personal assistants, the integration of smart systems into physical machines is evolutionising industries like manufacturing, healthcare and logistics. In 2025, we’re seeing a rise in collaborative robots (“cobots”) that work safely alongside humans, boosting productivity without replacing jobs.
+
+The year also brings advancements in AI models for robotic vision, tactile sensing and real-time decision-making, making machines more aware and adaptable than ever before. The future of robotics is intelligent, responsive and deeply intertwined with AI progress.
+    `,
   },
 ];

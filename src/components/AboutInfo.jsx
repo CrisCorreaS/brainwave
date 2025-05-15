@@ -2,7 +2,7 @@ import Section from "./Section";
 import { smallSphere, stars } from "../assets";
 import Heading from "./Heading";
 import InfoList from "./InfoList";
-import { LeftLine, RightLine } from "./design/Pricing";
+import { LeftLine, RightLine } from "./design/Info";
 import { Gradient } from "./design/Roadmap";
 
 const AboutInfo = () => {

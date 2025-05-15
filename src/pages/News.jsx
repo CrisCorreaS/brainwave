@@ -1,11 +1,11 @@
 import ButtonGradient from "../assets/svg/ButtonGradient";
 import Services from "../components/Services";
+import NewsInfo from "../components/NewsIInfo";
 
 const News = () => {
   return (
     <>
-      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
-      </div>
+      <NewsInfo />
       <Services />
       <ButtonGradient />
     </>
