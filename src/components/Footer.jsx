@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Section from "./Section";
+import ButtonSvg from "../assets/svg/ButtonSvg";
 import { socials } from "../constants";
 
 const Footer = () => {
@@ -28,15 +29,13 @@ const Footer = () => {
               </a>
             ))}
           </ul>
-          <div className="flex gap-4 items-center text-sm font-semibold uppercase font-code text-n-1/50 hover:text-n-1 transition-colors">
-            <Link to="/register" className="hover:text-color-1">
-              Register
-            </Link>
-            <span className="text-n-4">/</span>
-            <Link to="/login" className="hover:text-color-1">
-              Login
-            </Link>
-          </div>
+          <Link
+            to="/login"
+            className="button relative inline-flex items-center justify-center h-11 px-7 text-sm font-semibold uppercase font-code text-white hover:text-color-1 transition-colors"
+          >
+            <span className="relative z-20">Login</span>
+            {ButtonSvg(false)}
+          </Link>
         </div>
       </div>
     </Section>

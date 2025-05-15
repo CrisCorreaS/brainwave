@@ -8,6 +8,7 @@ import smallSphere from "./4-small.png";
 import grid from "./grid.png";
 import check2 from "./check-02.svg";
 import loading1 from "./loading-01.svg";
+import trashIcon from "./trashIcon.svg"
 
 import yourlogo from "./yourlogo.svg";
 import logo1 from './logo1.svg';
@@ -105,6 +106,7 @@ export {
   gradient,
   smallSphere,
   grid,
+  trashIcon,
   yourlogo,
   logo1,
   logo2,

@@ -1,9 +1,10 @@
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
 import Section from "./Section.jsx";
 import useAlert from "../hooks/useAlert.js";
 import Alert from "./Alert.jsx";
 import { terminalDark, arrowUp } from "../assets/index.js";
+import supabase from "../helper/supabaseClient";
 
 const ContactForm = () => {
   const formRef = useRef();
@@ -25,56 +26,89 @@ const ContactForm = () => {
     setForm({ ...form, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const saveToSupabase = async (form) => {
+    const { error } = await supabase.from("contact_messages").insert([
+      {
+        name: form.name,
+        email: form.email,
+        phone: form.phone,
+        company: form.company,
+        country: form.country,
+        job_title: form.jobTitle,
+        message: form.message,
+      }
+    ]);
+
+    if (error) {
+      throw error;
+    }
+  };
+
+  // const sendEmailNotification = async (form) => {
+  //   await emailjs.send(
+  //     import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+  //     import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+  //     {
+  //       from_name: form.name,
+  //       to_name: "Cristina Correa",
+  //       from_email: form.email,
+  //       to_email: "cristina.correa.segade@gmail.com",
+  //       phone: form.phone,
+  //       company: form.company,
+  //       country: form.country,
+  //       job_title: form.jobTitle,
+  //       message: form.message,
+  //     },
+  //     import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+  //   );
+  // };
+
+  const resetForm = () => {
+    setForm({
+      name: "",
+      email: "",
+      phone: "",
+      company: "",
+      country: "",
+      jobTitle: "",
+      message: "",
+    });
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: "Cristina Correa",
-          from_email: form.email,
-          to_email: "cristina.correa.segade@gmail.com",
-          phone: form.phone,
-          company: form.company,
-          country: form.country,
-          job_title: form.jobTitle,
-          message: form.message,
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setLoading(false);
-          showAlert({
-            show: true,
-            text: "Thank you for your message 😃",
-            type: "success",
-          });
+    try {
+      await saveToSupabase(form);
+      // await sendEmailNotification(form);
 
-          setTimeout(() => {
-            hideAlert(false);
-            setForm({
-              name: "",
-              email: "",
-              message: "",
-            });
-          }, [3000]);
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
+      showAlert({
+        show: true,
+        text: "Thank you for your message 😃",
+        type: "success",
+      });
 
-          showAlert({
-            show: true,
-            text: "I didn't receive your message 😢",
-            type: "danger",
-          });
-        }
-      );
+      setTimeout(() => {
+        hideAlert(false);
+        resetForm();
+      }, 3000);
+    } catch (err) {
+      console.error(err);
+
+      showAlert({
+        show: true,
+        text: "I didn't receive your message 😢",
+        type: "danger",
+      });
+
+      setTimeout(() => {
+        hideAlert(false);
+        resetForm();
+      }, 3000);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -159,7 +193,7 @@ const ContactForm = () => {
                   onChange={handleChange}
                   required
                   className="field-input terminal-input"
-                  placeholder="ex., criscorre+a@gmail.com"
+                  placeholder="ex., cris.correa@gmail.com"
                 />
               </label>
 
