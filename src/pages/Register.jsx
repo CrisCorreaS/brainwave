@@ -42,8 +42,8 @@ function Register() {
         text="Sign up to start administrating your dashboard"
       />
 
-        <Gradient />
-      
+      <Gradient />
+
       <div className="p-0.5 rounded-[2.5rem] bg-conic-gradient max-w-md mx-auto mb-10">
         <div className="rounded-[2.25rem] bg-n-8 p-8 relative overflow-hidden border border-n-6/20 shadow-lg">
           {message && (
@@ -79,6 +79,28 @@ function Register() {
             </Link>
           </div>
         </div>
+      </div>
+      <div className="mb-10 flex justify-center">
+        <Link
+          to="/dashboard"
+          className="inline-flex items-center gap-2 text-n-8 bg-n-1 rounded-full px-6 py-2 text-sm font-semibold hover:bg-n-2 transition-all group w-fit mb-10"
+        >
+          <svg
+            className="w-4 h-4 transition-transform group-hover:-translate-x-1"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M15 19l-7-7 7-7"
+            ></path>
+          </svg>
+          Go Back to Dashboard
+        </Link>
       </div>
     </Section>
   );

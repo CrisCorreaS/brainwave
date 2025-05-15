@@ -27,22 +27,21 @@ const GlowCard = ({ card, index, children }) => {
     >
       <div className="card card-border timeline-card rounded-[2.25rem] p-10 bg-n-8 relative overflow-hidden">
         <div className="glow"></div>
-  
+
         <div className="flex items-center gap-1 mb-5">
-          {Array.from({ length: 5 }, (_, i) => (
+          {Array.from({ length: card.stars }, (_, i) => (
             <img key={i} src={star} alt="star" className="size-5" />
           ))}
         </div>
-  
+
         <div className="mb-5">
           <p className="body-2 text-n-4 text-white">{card.review}</p>
         </div>
-  
+
         {children}
       </div>
     </div>
   );
-  
 };
 
 export default GlowCard;

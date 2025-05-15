@@ -7,6 +7,36 @@ function Dashboard() {
   const navigate = useNavigate();
   const [messages, setMessages] = useState([]);
   const [isDeleting, setIsDeleting] = useState(false);
+  const [currentUserId, setCurrentUserId] = useState(null);
+
+  useEffect(() => {
+    const fetchUserAndMessages = async () => {
+      const {
+        data: { user },
+        error: userError,
+      } = await supabase.auth.getUser();
+
+      if (userError) {
+        console.error("Error fetching user", userError);
+        return;
+      }
+
+      setCurrentUserId(user?.id);
+
+      const { data, error: msgError } = await supabase
+        .from("contact_messages")
+        .select("*")
+        .order("created_at", { ascending: false });
+
+      if (msgError) {
+        console.error("Error fetching messages", msgError);
+      } else {
+        setMessages(data);
+      }
+    };
+
+    fetchUserAndMessages();
+  }, []);
 
   const signOut = async () => {
     const { error } = await supabase.auth.signOut();
@@ -106,14 +136,16 @@ function Dashboard() {
                   key={msg.id}
                   className="px-6 py-5 hover:bg-gray-50 transition-colors duration-150 relative"
                 >
-                  <button
-                    onClick={() => deleteMessage(msg.id)}
-                    disabled={isDeleting}
-                    className="absolute top-1/2 right-4 transform -translate-y-1/2 p-1 text-red-500 hover:text-red-700 transition-colors"
-                    title="Delete message"
-                  >
-                    <img src={trashIcon} alt="Delete" className="h-5 w-5" />
-                  </button>
+                  {currentUserId === "7a15523d-ae0b-40a3-b1c6-d688cbba27bf" && (
+                    <button
+                      onClick={() => deleteMessage(msg.id)}
+                      disabled={isDeleting}
+                      className="absolute top-1/2 right-4 transform -translate-y-1/2 p-1 text-red-500 hover:text-red-700 transition-colors"
+                      title="Delete message"
+                    >
+                      <img src={trashIcon} alt="Delete" className="h-5 w-5" />
+                    </button>
+                  )}
 
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pr-6">
                     <div>

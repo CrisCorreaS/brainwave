@@ -38,12 +38,6 @@ import {
   logo3,
   logo4,
   logo5,
-  client1,
-  client2,
-  client3,
-  client4,
-  client5,
-  client6,
   news1,
   news2,
   news3,
@@ -305,51 +299,6 @@ export const benefits = [
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
-  },
-];
-
-export const testimonials = [
-  {
-    name: "Esther Howard",
-    mentions: "@estherhoward",
-    review:
-      "I can’t speak highly enough of DeepGlow. They took our complex AI requirements and delivered a seamless, intelligent solution. Their problem-solving skills are second to none.",
-    imgPath: client1,
-  },
-  {
-    name: "Wade Warren",
-    mentions: "@wadewarren",
-    review:
-      "Working with DeepGlow was brilliant. They transformed our outdated systems into a cutting-edge, AI-driven platform. Their attention to detail and commitment to quality are unmatched. Highly recommended for any AI project.",
-    imgPath: client3,
-  },
-  {
-    name: "Guy Hawkins",
-    mentions: "@guyhawkins",
-    review:
-      "Collaborating with DeepGlow was an absolute pleasure. Their professionalism, efficiency and dedication to excellence were evident throughout. Their passion for AI innovation truly stands out. If you want to future-proof your business, DeepGlow is the partner you need. Their technology is tailored, not templated.",
-    imgPath: client2,
-  },
-  {
-    name: "Marvin McKinney",
-    mentions: "@marvinmckinney",
-    review:
-      "DeepGlow was fantastic to work with. They modernised our operations with intuitive AI tools that are both powerful and easy to use. Exceptional work all around.",
-    imgPath: client5,
-  },
-  {
-    name: "Floyd Miles",
-    mentions: "@floydmiles",
-    review:
-      "DeepGlow’s expertise in AI is seriously impressive. They built us a scalable, intelligent system that’s boosted efficiency by 40%. Proper professionals!",
-    imgPath: client4,
-  },
-  {
-    name: "Albert Flores",
-    mentions: "@albertflores",
-    review:
-      "DeepGlow nailed our project. They grasped our needs perfectly and delivered an AI solution that surpassed expectations. Their technical skills are top-tier.",
-    imgPath: client6,
   },
 ];
 

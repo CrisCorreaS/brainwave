@@ -14,7 +14,6 @@ const Home = () => {
         <Testimonials />
         <ContactForm />
       </main>
-
       <ButtonGradient />
     </>
   );
