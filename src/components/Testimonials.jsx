@@ -2,6 +2,8 @@ import { testimonials } from "../constants";
 import Section from "./Section";
 import Heading from "./Heading";
 import GlowCard from "./GlowCard";
+import { GradientLight } from "../components/design/Benefits";
+
 
 const Testimonials = () => {
   return (
@@ -11,6 +13,7 @@ const Testimonials = () => {
           tag="What People Say About Us?"
           title="Customer feedback highlights"
         />
+    <GradientLight />
 
         <div className="lg:columns-3 md:columns-2 columns-1 mt-16 mr-10 ml-10">
           {testimonials.map((testimonial, index) => (

@@ -9,8 +9,6 @@ import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
-import Pruebas from "./pages/Pruebas";
-import PruebasPricing from "./pages/PruebasPricing";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Wrapper from "./pages/Wrapper";
@@ -50,8 +48,6 @@ const App = () => {
             </Wrapper>
           }
         />
-        <Route path="/pruebas" element={<Pruebas />} />
-        <Route path="/prueba-pricing" element={<PruebasPricing />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
 
