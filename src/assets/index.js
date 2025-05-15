@@ -102,7 +102,6 @@ import news4 from "./news/news4.svg";
 import events1 from "./events/events1.svg";
 import events2 from "./events/events2.svg";
 import events3 from "./events/events3.svg";
-import events4 from "./events/events4.svg";
 import pastevents1 from "./events/past-events1.svg";
 import pastevents2 from "./events/past-events2.svg";
 
@@ -198,7 +197,6 @@ export {
   events1,
   events2,
   events3,
-  events4,
   pastevents1,
   pastevents2,
 };

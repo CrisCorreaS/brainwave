@@ -51,7 +51,6 @@ import {
   events1,
   events2,
   events3,
-  events4,
   pastevents1,
   pastevents2,
 } from "../assets";
@@ -515,5 +514,76 @@ From autonomous delivery robots to AI-driven personal assistants, the integratio
 
 The year also brings advancements in AI models for robotic vision, tactile sensing and real-time decision-making, making machines more aware and adaptable than ever before. The future of robotics is intelligent, responsive and deeply intertwined with AI progress.
     `,
+  },
+];
+
+export const current_events = [
+  {
+    id: "1",
+    title: "AI Businesses Analytics Revolution",
+    subtitle:
+      "Advanced AI-driven analytics tools are transforming decision-making across industries.",
+    date: "June 14, 2025",
+    imageUrl: events1,
+    content: `
+Artificial intelligence is now at the forefront of data analytics, enabling companies to process vast amounts of information in real time. With machine learning algorithms, businesses can predict trends, optimise operations, and personalise customer experiences like never before.  
+
+Leading firms are leveraging AI-powered dashboards that highlight key metrics and automate reports, saving countless hours of manual analysis. As these tools become more accessible, even small enterprises are adopting them to stay competitive. The future of analytics is intelligent, immediate, and indispensable.
+    `,
+  },
+  {
+    id: "2",
+    title: "Investment Boom in AI: Mobile-First Solutions",
+    subtitle:
+      "Venture capital floods into AI startups focusing on mobile integration.",
+    date: "July 12, 2025",
+    imageUrl: events2,
+    content: `
+The AI investment landscape is witnessing a surge, particularly in mobile-centric applications. From voice assistants to on-device machine learning, investors are betting big on technologies that merge AI with smartphones and tablets.  
+
+Mobile AI offers unparalleled convenience, such as offline processing for privacy-conscious users and real-time language translation for travellers. Analysts predict that by 2026, over 60% of AI interactions will occur via mobile devices. For businesses, this shift underscores the need to prioritise mobile-friendly AI solutions to capture growing markets.
+    `,
+  },
+  {
+    id: "3",
+    title: "The Rise of AI-Powered Web Search",
+    subtitle:
+      "New generative AI models are redefining how we find information online.",
+    date: "August 9, 2025",
+    imageUrl: events3,
+    content: `
+Traditional keyword-based web searches are becoming obsolete as AI-driven platforms deliver precise, context-rich answers. Tools like AI summarisers and semantic search engines understand intent, reducing the need to sift through pages of results.  
+
+These systems also learn from user behaviour, offering tailored recommendations and even anticipating queries before they’re typed. Critics warn of potential biases in training data, but proponents argue the benefits—speed, accuracy and natural-language understanding—far outweigh the risks. The web is entering an era where finding information feels like conversing with an expert.
+    `,
+  },
+];
+
+export const past_events = [
+  {
+    id: "4",
+    title: "12-Hour Sustainability Hackathon",
+    subtitle:
+      "Developers and designers collaborate on green solutions under tight deadlines.",
+    date: "May 09, 2025",
+    imageUrl: pastevents1,
+    content: `
+Last month’s 12-Hour Sustainability Hackathon brought together over 200 participants to brainstorm tech-driven answers to environmental crises. Teams focused on projects like AI-powered energy audits, blockchain for carbon tracking and apps to reduce food waste.  
+
+The winning entry, "EcoRoute," used machine learning to optimise delivery logistics, cutting fuel consumption by up to 30%. Events like this highlight how technology, when directed toward sustainability, can deliver tangible impact—fast.
+  `,
+  },
+  {
+    id: "5",
+    title: "AI Ethics & Responsibility Roundtable",
+    subtitle:
+      "Industry leaders debate the moral implications of AI advancements.",
+    date: "February 15, 2025",
+    imageUrl: pastevents2,
+    content: `
+At February’s AI Ethics Roundtable, academics, policymakers and tech executives clashed over how to govern rapidly evolving AI systems. Key topics included algorithmic bias, deepfake regulation, and the ethical use of autonomous weapons.  
+
+A consensus emerged on the need for transparent AI development frameworks, though enforcement remains contentious. The event concluded with a pledge from major firms to audit their AI systems annually—a small but critical step toward responsible innovation.
+  `,
   },
 ];

@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import Events from "./pages/Events";
 import News from "./pages/News";
-import NewsDetail from "./pages/NewsDetail";
+import InfoDetail from "./pages/InfoDetail";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
@@ -13,6 +13,7 @@ import Dashboard from "./pages/Dashboard";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Wrapper from "./pages/Wrapper";
+import { news, current_events, past_events } from "./constants";
 
 const App = () => {
   const location = useLocation();
@@ -29,8 +30,19 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/events" element={<Events />} />
+        <Route 
+          path="/events/current/:id" 
+          element={<InfoDetail items={current_events} backLink="/events" />} 
+        />
+        <Route 
+          path="/events/past/:id" 
+          element={<InfoDetail items={past_events} backLink="/events" />} 
+        />
         <Route path="/news" element={<News />} />
-        <Route path="/news/:id" element={<NewsDetail />} />
+        <Route 
+          path="/news/:id" 
+          element={<InfoDetail items={news} backLink="/news" />} 
+        />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
